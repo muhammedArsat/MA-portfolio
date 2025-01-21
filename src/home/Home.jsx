@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Profile from '../assets/profile_pic_1.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import Aos from 'aos';
+import "aos/dist/aos.css";
 const Home = () => {
     useEffect(()=>{
         Aos.init({duration:2000})
@@ -12,7 +13,7 @@ const Home = () => {
             id="home"
         >
             <div className=" md:flex md:flex-col md:justify-center md:items-center  md:gap-5 lg:basis-2/4  md:pl-4 ">
-                <h1 className="text-3xl w-full md:text-4xl" data-aos='zoom-in'>
+                <h1 className="text-3xl w-full md:text-4xl" data-aos='slide-right'>
                     I am Muhammed Arsath CN<br/>
                     <div className="text-green-400 flex  text-left text-sm xl:text-lg pt-2">
                         <TypeAnimation
@@ -32,7 +33,7 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="flex justify-center items-center pt-6 md:basis-1/2  py-4  " >
+            <div className="flex justify-center items-center pt-6 md:basis-1/2  py-4  " data-aos='zoom-in' >
                 <img
                     src={Profile}
                     alt="profile_pic"

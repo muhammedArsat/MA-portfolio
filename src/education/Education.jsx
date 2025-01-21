@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Education = () => {
+     useEffect(()=>{
+                Aos.init({duration:2000})
+            },[])
     return (
         <div className=" gap-y-4  xl:min-h-dvh  " id='education'>
             <div ></div>
-            <h1 className="w-full text-center text-3xl mt-10 relative after:content-[''] after:absolute after:bottom-[-10px] md:after:top-11 after:left-1/2 after:transform after:-translate-x-1/2 after:w-28 after:h-1 after:rounded-lg after:bg-green-300">
+            <h1 className="w-full text-center text-3xl mt-10 relative after:content-[''] after:absolute after:bottom-[-10px] md:after:top-11 after:left-1/2 after:transform after:-translate-x-1/2 after:w-28 after:h-1 after:rounded-lg after:bg-green-300" data-aos='slide-right'>
                 Education
             </h1>
             <div className="flex flex-col mx-5 my-10 ">
                 <div>
-                    <h1 className=" font-medium md:text-lg tracking-wide leading-6  text-gray-400  pt-8 md:text-left text-justify">
+                    <h1 className=" font-medium md:text-lg tracking-wide leading-6  text-gray-400  pt-8 md:text-left text-justify" data-aos='slide-right'>
                         My educational journey has equipped me with a strong
                         foundation in Computer Science Engineering, complemented
                         by specialized courses and hands-on projects that have
@@ -21,7 +26,7 @@ const Education = () => {
 
             <div className="grid  w-full   gap-4 mb-5 md:grid-cols-3 md:gap-x-0  ">
                 {/* college Degree */}
-                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors ">
+                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors " data-aos='fade-up'>
                     <h1 className="text-lg font-medium text-gray-400 hover:text-white text-left ">
                         2022-2026
                     </h1>
@@ -34,7 +39,7 @@ const Education = () => {
                     </h1>
                 </div>
                 {/* HSC Degree */}
-                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors">
+                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors" data-aos='fade-up'>
                     <h1 className="text-lg font-medium text-gray-400 hover:text-white text-left ">
                         2021-2022
                     </h1>
@@ -47,7 +52,7 @@ const Education = () => {
                     </h1>
                 </div>
                 {/* SSLC Degree */}
-                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors">
+                <div className=" px-4 flex flex-col gap-3 justify-around  border border-green-400 mx-5 hover:bg-green-400 hover:text-black  p-4 transition-colors" data-aos='fade-up'>
                     <h1 className="text-lg font-medium text-gray-400 hover:text-white text-left ">
                         2019-2020
                     </h1>
