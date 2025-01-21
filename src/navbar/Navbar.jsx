@@ -55,6 +55,8 @@ const Navbar = () => {
                 <li
                     className="tracking-wider font-medium p-4"
                     onClick={(e) => handleScroll(e, 'projects')}
+
+
                 >
                     Projects
                 </li>

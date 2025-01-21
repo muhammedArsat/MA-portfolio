@@ -14,7 +14,7 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) =>
         <div className="shadow-lg grid gap-4 p-4 rounded-lg w-full">
             <h1 className="text-2xl tracking-wider font-medium">
                 {' '}
-                Transport Permit Website
+              {title}
             </h1>
             <div className="relative ">
                 <div className="overflow-hidden">
@@ -46,22 +46,20 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) =>
             </div>
             <div className="grid grid-cols-4 gap-3">
             <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
-                    <h1 className=" flex justify-center items-center">React JS</h1>
+                    <h1 className=" flex justify-center items-center">{tech1}</h1>
                 </div>
                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
-                <h1 className=" flex justify-center items-center">React JS</h1>
+                <h1 className=" flex justify-center items-center">{tech2}</h1>
                 </div>
                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
-                <h1 className="flex justify-center items-center">React JS</h1>
+                <h1 className="flex justify-center items-center">{tech3}</h1>
                 </div>
                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
-                <h1 className=" flex justify-center items-center">React JS</h1>
+                <h1 className=" flex justify-center items-center">{tech4}</h1>
                 </div>
             </div>
             <h1 className="tracking-wider text-left text-slate-400">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequuntur, incidunt omnis? Nostrum, ipsum. Ipsam, ea dolorem
-                dolor vitae nulla nisi.
+                {desc}
             </h1>
         </div>
     );

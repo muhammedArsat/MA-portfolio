@@ -7,7 +7,10 @@ import { FiInstagram } from 'react-icons/fi';
 import { FaLinkedin } from 'react-icons/fa';
 const Contact = () => {
     return (
-        <div className="flex flex-col border-t-green-400 border-2 mt-5 " id='contact'>
+        <div
+            className="flex flex-col border-t-green-400 border-2 mt-5 "
+            id="contact"
+        >
             <h1 className="w-full text-center text-3xl mt-10 relative after:content-[''] after:absolute after:bottom-[-10px] md:after:top-11 after:left-1/2 after:transform after:-translate-x-1/2 after:w-36 after:h-1 after:rounded-lg after:bg-green-300 mb-10 ">
                 Contact Me
             </h1>
@@ -34,8 +37,18 @@ const Contact = () => {
                     <div>
                         <h1 className="text-xl font-medium ">Follow Me </h1>
                         <div className="flex gap-4 mt-4">
+                        <a
+                                href="https://www.instagram.com/_iamarsath?igsh=cmluemg0aXpoeHNx"
+                                target="_blank"
+                            >
                             <FiInstagram size={30} />
-                            <AiFillLinkedin size={30} />
+                            </a>
+                            <a
+                                href="http://www.linkedin.com/in/muhammedarsath-c-n-62a49625a"
+                                target="_blank"
+                            >
+                                <AiFillLinkedin size={30} />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +63,7 @@ const Contact = () => {
                         </label>
                         <input
                             type="text"
-                            className="bg-white shadow-md border rounded-lg w-full px-4 py-5 hover:rounded-xl outline-green-400"
+                            className="bg-white shadow-md border rounded-lg w-full px-4 py-5 focus:shadow-2xl focus:outline-none"
                             placeholder="Your Name..."
                         />
                     </div>
@@ -64,7 +77,7 @@ const Contact = () => {
                             </label>
                             <input
                                 type="text"
-                                className="bg-white shadow-md border rounded-lg w-full  px-4 py-5 hover:rounded-2xl outline-green-400 mb-4 "
+                                className="bg-white shadow-md border rounded-lg w-full  px-4 py-5 outline-none hover:shadow-2xl mb-4 focus:shadow-2xl "
                                 placeholder="+91 1234567890"
                             />
                         </div>
@@ -78,7 +91,7 @@ const Contact = () => {
                             </label>
                             <input
                                 type="text"
-                                className="bg-white shadow-md border rounded-lg w-full  px-4 py-5  outline-green-400 "
+                                className="bg-white shadow-md border rounded-lg w-full  px-4 py-5 focus:shadow-2xl focus:outline-none "
                                 placeholder="youremail@gmail.com"
                             />
                         </div>
@@ -93,7 +106,7 @@ const Contact = () => {
                         </label>
                         <textarea
                             type="text"
-                            className="bg-white shadow-md border rounded-lg w-full px-4 py-5 hover:rounded-2xl outline-green-400 h-36 resize-none "
+                            className="bg-white shadow-md border rounded-lg w-full px-4 py-5 hover:rounded-2xl outline-green-400 h-36 resize-none focus:shadow-2xl focus:outline-none "
                             placeholder="Your Message..."
                         />
                     </div>
