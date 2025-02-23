@@ -45,6 +45,7 @@ const Projects = () => {
                         desc={
                             ' A user-friendly platform for applying and managing transport permits, streamlining the process for both applicants and authorities.'
                         }
+                        projectLink={"https://www.github.com/muhammedArsat/Transport-permit"}
                     >
                         {P_1.map((img, index) => {
                             return (
@@ -68,6 +69,7 @@ const Projects = () => {
                         desc={
                             '  An efficient system for coordinating disaster relief efforts, ensuring quick response and resource allocation during emergencies.'
                         }
+                        projectLink={"https://www.github.com/muhammedArsat/Disaster-Relief-Coordination"}
                     >
                         {P_2.map((img, index) => {
                             return (
@@ -91,6 +93,7 @@ const Projects = () => {
                         desc={
                             '   A portal for scheduling and managing reviews, enhancing productivity and organization for reviewers and administrators.'
                         }
+                        projectLink={"https://www.github.com/muhammedArsat/project-slot-booking"}
                     >
                         {P_3.map((img, index) => {
                             return (
@@ -104,7 +107,7 @@ const Projects = () => {
                     </ProjectCarosual>
                 </div>
 
-                <div data-aos="fade-up">
+                {/* <div data-aos="fade-up">
                     <ProjectCarosual>
                         {P_1.map((img, index) => {
                             return (
@@ -116,7 +119,7 @@ const Projects = () => {
                             );
                         })}
                     </ProjectCarosual>
-                </div>
+                </div> */}
             </div>
         </div>
     );

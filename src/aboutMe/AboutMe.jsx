@@ -24,7 +24,7 @@ const AboutMe = () => {
                 </h1>
 
                 <a
-                    href="../../public/portfolio-resume.pdf"
+                    href="Arsath-Resume.pdf"
                     download ="Arsath-Resume"
                     class="w-44 border-2 border-green-400 px-4 py-5 text-center hover:bg-green-400 hover:text-white transition-colors"
                     data-aos='slide-left'

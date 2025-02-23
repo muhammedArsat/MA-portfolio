@@ -4,7 +4,7 @@ import Image1 from '../assets/T-W-1.png';
 import { MdKeyboardArrowLeft } from 'react-icons/md';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
-const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) => {
+const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4,projectLink }) => {
     const [index, setIndex] = useState(0);
     const prev = () =>
         setIndex((curr) => (curr === 0 ? children.length - 1 : curr - 1));
@@ -45,7 +45,7 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) =>
                 </div>
             </div>
             <div className="grid grid-cols-3 gap-3 xl:grid-cols-4">
-            <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
+                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
                     <h1 className=" flex justify-center items-center">{tech1}</h1>
                 </div>
                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors ">
@@ -58,6 +58,7 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) =>
                 <h1 className=" flex justify-center items-center">{tech4}</h1>
                 </div>
             </div>
+            <h1 className="text-green-400"><a href='https://www.github.com/muhammedArsat' target='__blank'>Github Link</a></h1>
             <h1 className="tracking-wider text-left text-slate-400">
                 {desc}
             </h1>
