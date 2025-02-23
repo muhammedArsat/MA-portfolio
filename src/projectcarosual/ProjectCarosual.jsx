@@ -58,7 +58,7 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4,proje
                 <h1 className=" flex justify-center items-center">{tech4}</h1>
                 </div>
             </div>
-            <h1 className="text-green-400"><a href='https://www.github.com/muhammedArsat' target='__blank'>Github Link</a></h1>
+            <h1 className="text-green-400"><a href={projectLink} target='__blank'>Github Link</a></h1>
             <h1 className="tracking-wider text-left text-slate-400">
                 {desc}
             </h1>
