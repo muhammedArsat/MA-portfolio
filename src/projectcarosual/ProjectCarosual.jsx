@@ -44,11 +44,11 @@ const ProjectCarosual = ({ children, title, desc, tech1,tech2, tech3,tech4 }) =>
                     <h1>{index+1} / {children.length}</h1>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-3">
+            <div className="grid grid-cols-3 gap-3 xl:grid-cols-4">
             <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
                     <h1 className=" flex justify-center items-center">{tech1}</h1>
                 </div>
-                <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">
+                <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors ">
                 <h1 className=" flex justify-center items-center">{tech2}</h1>
                 </div>
                 <div className="border border-green-400 px-1 py-3 rounded-md hover:scale-105  hover:text-white hover:bg-green-400 transition-colors">

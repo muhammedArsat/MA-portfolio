@@ -35,7 +35,7 @@ const Projects = () => {
                 Projects
             </h1>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3">
-                <div data-aos='fade-up'>
+                <div data-aos="fade-up">
                     <ProjectCarosual
                         title={'Transport Permit Website'}
                         tech1={'React Js'}
@@ -58,7 +58,7 @@ const Projects = () => {
                     </ProjectCarosual>
                 </div>
 
-                <div data-aos='fade-up'>
+                <div data-aos="fade-up">
                     <ProjectCarosual
                         title={'Disaster Relief Coordination'}
                         tech1={'React Js'}
@@ -81,7 +81,7 @@ const Projects = () => {
                     </ProjectCarosual>
                 </div>
 
-                <div data-aos='fade-up'>
+                <div data-aos="fade-up">
                     <ProjectCarosual
                         title={'Review Scheduling Portal'}
                         tech1={'React Js'}
@@ -104,7 +104,7 @@ const Projects = () => {
                     </ProjectCarosual>
                 </div>
 
-                <div data-aos='fade-up'>
+                <div data-aos="fade-up">
                     <ProjectCarosual>
                         {P_1.map((img, index) => {
                             return (
