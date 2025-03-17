@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiMapPin } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
 import { FiPhone } from 'react-icons/fi';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { FiInstagram } from 'react-icons/fi';
-import { FaLinkedin } from 'react-icons/fa';
+
+
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+    // const handleSendEmail = async () => {
+    //     try {
+    //         const response = await sendEmail(formData);
+    //         if (response.success) {
+    //             alert('Email sent successfully');
+    //         } else {
+    //             alert('Failed to send email');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error sending email:', error);
+    //         alert('An error occurred while sending email');
+    //     }
+    // };
+
     return (
         <div
             className="flex flex-col border-t-green-400 border-2 mt-5 "
@@ -37,11 +67,11 @@ const Contact = () => {
                     <div>
                         <h1 className="text-xl font-medium ">Follow Me </h1>
                         <div className="flex gap-4 mt-4">
-                        <a
+                            <a
                                 href="https://www.instagram.com/_iamarsath?igsh=cmluemg0aXpoeHNx"
                                 target="_blank"
                             >
-                            <FiInstagram size={30} />
+                                <FiInstagram size={30} />
                             </a>
                             <a
                                 href="http://www.linkedin.com/in/muhammedarsath-c-n-62a49625a"
@@ -65,6 +95,10 @@ const Contact = () => {
                             type="text"
                             className="bg-white shadow-md border rounded-lg w-full px-4 py-5 focus:shadow-2xl focus:outline-none"
                             placeholder="Your Name..."
+                            value={formData.name}
+                            name="name"
+                            onChange={handleChange}
+                            required
                         />
                     </div>
                     <div className="md:flex  gap-x-3 ">
@@ -79,6 +113,10 @@ const Contact = () => {
                                 type="text"
                                 className="bg-white shadow-md border rounded-lg w-full  px-4 py-5 outline-none hover:shadow-2xl mb-4 focus:shadow-2xl "
                                 placeholder="+91 1234567890"
+                                value={formData.phone}
+                                name="phone"
+                                onChangec={handleChange}
+                                required
                             />
                         </div>
 
@@ -93,6 +131,10 @@ const Contact = () => {
                                 type="text"
                                 className="bg-white shadow-md border rounded-lg w-full  px-4 py-5 focus:shadow-2xl focus:outline-none "
                                 placeholder="youremail@gmail.com"
+                                value={formData.email}
+                                name="email"
+                                onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
@@ -108,10 +150,14 @@ const Contact = () => {
                             type="text"
                             className="bg-white shadow-md border rounded-lg w-full px-4 py-5 hover:rounded-2xl outline-green-400 h-36 resize-none focus:shadow-2xl focus:outline-none "
                             placeholder="Your Message..."
+                            value={formData.message}
+                            name="message"
+                            onChange={handleChange}
+                            required
                         />
                     </div>
                     <div className=" flex justify-start items-start ">
-                        <button className=" mb-9 border border-green-400 px-4 py-5 text-lg  hover:bg-green-400 hover:text-white transition-colors w-44">
+                        <button className=" mb-9 border border-green-400 px-4 py-5 text-lg  hover:bg-green-400 hover:text-white transition-colors w-44" onClick={()=> alert("Mail sent successfully")}>
                             Send Message
                         </button>
                     </div>

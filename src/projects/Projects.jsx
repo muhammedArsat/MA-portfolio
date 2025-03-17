@@ -45,7 +45,7 @@ const Projects = () => {
                         desc={
                             ' A user-friendly platform for applying and managing transport permits, streamlining the process for both applicants and authorities.'
                         }
-                        projectLink={"https://www.github.com/muhammedArsat/Transport-permit"}
+                        projectLink={"https://github.com/muhammedArsat/Transport-Permit-Web"}
                     >
                         {P_1.map((img, index) => {
                             return (
